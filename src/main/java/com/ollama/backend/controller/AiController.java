@@ -21,7 +21,7 @@ public class AiController {
     public ResponseEntity<String> askAi(
     @RequestParam(value= "query",
             required = false,
-            defaultValue = "How are You? How Can You Help Me"  )
+            defaultValue = "How are You Doing? How Can You Help Me"  )
             String query
     ){
     String response= aiService.askAi(query);
